@@ -1,6 +1,5 @@
 #!/bin/bash
 #This is the NFS server script#
-yum install nfs-utils
 curl -4 authconfig.me
 sudo systemctl start nfs
 firewall-cmd --zone=public --add-port=2049/tcp --permanent
